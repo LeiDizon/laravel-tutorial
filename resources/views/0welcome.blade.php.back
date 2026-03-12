@@ -1,0 +1,24 @@
+<x-layout title="Welcome">
+
+<h1>{{$greeting}}, {{$person}}!</h1>
+
+@if (count($tasks))
+
+    <p> Yes we have some tasks. How many? <?= count($tasks) ?> tasks, in fact! </p>
+
+
+@endif
+
+@forelse($tasks as $task)
+
+    <li>{{ $task }}</li>
+
+@empty
+    <p> No active tasks, Yay! </p>
+
+@endforelse
+
+
+@dump($tasks)
+
+</x-layout>
