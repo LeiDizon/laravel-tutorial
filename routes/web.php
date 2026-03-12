@@ -26,8 +26,8 @@ Route::get('/', function () {
 
     //return $ideas; ---> Returns (in JSON format) all the ideas in the database, including their id, description, created_at and updated_at
     //return $ideas[0]; ---> Returns the first array in table ideas, including its id, description, created_at and updated_at
-    return $ideas[0]->description;//Returns the description of the first array in table ideas
-    dd($ideas);
+    //return $ideas[0]->description;Returns the description of the first array in table ideas
+    // dd($ideas);
 
     return view('ideas', ['ideas' => $ideas]);
 
