@@ -29,7 +29,7 @@ Route::get('/', function () {
     return $ideas[0]->description;//Returns the description of the first array in table ideas
     dd($ideas);
 
-    // return view('ideas', ['ideas' => $ideas]);
+    return view('ideas', ['ideas' => $ideas]);
 
 
 });
